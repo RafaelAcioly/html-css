@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Icons8-Windows-8-Sports-World-Cup.ico" type="image/x-icon">
+    <title>Página 001</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            color: darkblue;
+            background-color: lightblue;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <h2>Olá, Mundo!</h2>
+    <h3>Olá, Mundo!</h3>
+    <h4>Olá, Mundo!</h4>
+    <h5>Olá, Mundo!</h5>
+    <hr>
+
+    <p>Esse é o meu primeiro documento HTML! <br> Estou muito feliz!</p>
+    <p>&lt;p&gt; e &lt;/p&gt;</p> 
+    <!--apenas um comentário-->
+    <!-- Ctrl+Shift+P para abrir menu de inserção de tag -->
+    <p>Adicionando alguns smiles</p>
+    &#x1f60A;
+    &#x1FAF6;
+    <p>Adicionando alguns simbolos</p>
+    &reg;
+    &copy;
+    &euro;
+    &Delta;
+    &delta;
+    <hr>
+
+    <p>imagem na mesma pasta</p>
+    <img src="css3_reduzida.png" alt="logo css">
+    <p>imagem de outra pasta</p>
+    <img src="img/HTML5_reduzida.png" alt="logo html">
+    <p>imagem de outro site</p>
+    <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo-140x88.png" alt="logo javascript">
+    <hr>
+
+    <p>A tag "strong" traz o <strong>texto em negrito</strong></p>
+    <p>A tag "em" torna uma <em>frase em itálico</em></p>
+    <p>A tag "mark" <mark>marca um texto</mark></p>
+    <p>As tags "big" e "small" servem para <big>aumentar</big> o texto e torna-lo <small>pequeno</small> respctivamente, porém a "big" está entrando em desuso</p>
+    <p>Com a tag "del" Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido mas não considerado</p>
+    <p>Com a tag "ins" podemos marcar um <ins>texto como inserido</ins> para indicar que ele foi adicionado depois</p>
+    <p>A tag "sup" serve para inserir textos sobrescritos, coisas do tipo x<sup>20</sup>=3</p>
+    <p>A tag "sub" serve para inserir textos subexcritos, coisas do tipo H<sub>2</sub>O</p>
+    <hr>
+
+    <p>A taga "code" deixa as letras todas com o mesmo espaçamento: PorExemplo <code>PorExemplo</code></p>
+    <p>A tag "pre" coloca o texto (com indetação) no mesmo formato que está exposto no código Exemplo:</p>
+    <p> Escrito sem:
+            Tag "pre"
+    </p> 
+    <pre> Escrito com:
+            Tag "pre"
+    </pre>
+    <p>A tag "q", coloca aspas em um texto, dando siginifaco de citação. Exemplo: Como diria um pai de um amigo <q>o computador é um burro rápido</q></p>
+    <p>A tag "blockquote" adiciona uma citação em uma quebra de linha e um espaçamento.</p>
+    <blockquote cite="https://www.google.com/search?q=google+tradutor&oq=google&aqs=chrome.1.69i57j0i10i131i433i512l6j0i10i131i433i457i512j0i402l2.4424j0j7&sourceid=chrome&ie=UTF-8">
+        Citação em uma quebra de linha e um espaçamento. dentro do "blockquote" você pode adicionar um parâmetro citando o endereço de onde se pode achar a citação descrita, não serve como link mais vai servir aos mecanismos de busca do google.
+    </blockquote>
+    <p>
+        A tag "abbr" serve para adcionar o nome completo de uma abreviação. Estou estudando <abbr title="HyperText Markup">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>
+    </p>
+    <hr>
+
+    <p>Listas ordenadas</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Almoçar</li>
+    </ol>
+    <ol type="1" start="4"> <!--star é um parâmetro numérico-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Almoçar</li>
+    </ol>
+    <ol type="A">
+        <li>Acordar</li>
+            <ol type="a">
+                <li>Lavar o rosto</li>
+                <li>Fazer o café</li>
+            </ol>
+        <li>Tomar café</li>
+        <li>Almoçar</li>
+    </ol>
+    <ol type="I">
+        <li>Acordar</li>
+            <ol type="i">
+                <li>Lavar o rosto</li>
+                <li>Fazer o café</li>
+            </ol>
+        <li>Tomar café</li>
+        <li>Almoçar</li>
+    </ol>
+    <p>Listas não ordenadas</p>
+    <ul>
+        <li>Comprar pão</li>
+            <ol>
+                <li>Pão francês na Pão de ouro</li>
+                <li>Pão Recife em joão da ponte</li>
+            </ol>
+        <li>Compra leite</li>
+        <li>Comprar Queijo</li>
+    </ul>
+    <ul type="square">
+        <li>Comprar pão</li>
+        <li>Compra leite</li>
+        <li>Comprar Queijo</li>
+    </ul>
+    <ul type="circle">
+        <li>Comprar pão</li>
+        <li>Compra leite</li>
+        <li>Comprar Queijo</li>
+    </ul>
+    <p>Lista de definição</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de conteúdo de um site</dd>
+    </dl>
+    <hr>
+
+    <p>A tag "a" cria Links externos <a href="https://www.google.com/search?q=google&oq=goo&aqs=chrome.1.69i57j0i10i131i433i512l6j69i60.2877j0j7&sourceid=chrome&ie=UTF-8" target="_blank" rel="external">clicando aqui</a></p> 
+    <!--o parâmetro target, vai indicar a forma de abrir o link, blank significa que vai abrir em uma nova aba-->
+    <!--o rel=external é o parâmetro que vai indicar para o navegador que se trata de um link externo-->
+    <p>Este é um link interno para a <a href="pag002.html" rel="next">segunda página</a> deste site</p>
+    <p>Link interno para <a href="Nova pasta/pagina003.html">terceira página</a></p>
+    <p>Este é um link para <a href="PDF/apostila-html-css-javascript.pdf" download="apostila-html-css-javascript.pdf" type="application/pdf">download</a></p>
+    <p>Este é um link para <a href="PDF/apostila-html-css-javascript.rar" download="apostila-html-css-javascript.rar" type="application/rar">download</a> de arquivo rar</p>
+    <!-- link para site que especifica cada tipo de comando para os diferentes tipo de arquivos que serão baixados
+    https://www.iana.org/assignments/media-types/media-types.xhtml
+    -->
+    <hr>
+
+    <p>Imagem dinâmica com max width</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem flexível">
+    </picture>
+    <p>Imagem dinâmica com min width</p>
+    <picture>
+        <source media="(min-width:1050px)" srcset="img/foto-g.png" type="image/png">
+        <source media="(min-width:750px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-p.png" alt="imagem flexível">
+    </picture>
+    <hr>
+
+    <p>Reporduzindo áudio</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="audio/bilijean.mp3" type="audio/mpeg"> <!--colocar mais de um formato disponível, pois o navegador pode não ser compatível com o formato escolhido. A ordem é importante sem se carrega o arquivo que vier primeiro-->
+        <source src="audio/bilijean.ogg" type="audio/ogg">
+        <source src="audio/bilijean.wav" type="audio/wav"> <!--evitar arquivos em formato "wav" pois são arquivos muito grandes-->
+        <p>Infelizmente seu navegador não consegue reroduzir áudio. <a href="midia/bilijean.mp3">CLique aqui para baixar o arquivo em mp3</a></p>
+    </audio>
+    <hr>
+
+    <p>Reproduzindo vídeos hospedados localmente</p>
+    <video height="500" poster="img/foto-p.png" controls loop>
+        <source src="video/video.mkv" type="video/mp4">
+        <source src="video/video.webm" type="video/webm">
+        <source src="video/video.mkv" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <p>Reproduzindo vídeos hospedasos em outros sites</p>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <p><a href="https://vimeo.com/197093965">Reel 2016</a> from <a href="https://vimeo.com/wabbla">Alvise Zennaro</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    <hr>
+
+</body>
+</html>

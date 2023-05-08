@@ -1,0 +1,181 @@
+    @charset "UTF-8";
+
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    /*
+    site para adquirir outros tipos de fontes: google fonts
+    site para baixar fontes: dafont.com
+    */
+
+    @font-face{
+        font-family: 'baixada';
+        src: url('fontes/Activists\ Regular.otf') format('opentype'), url('fontes/Activists\ Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    /*
+    tipos de format(): opentype(otf) 
+                        truetype(ttf)
+                        embedde-opentype
+                        truetype-aat (apple advanced typography)
+                        svg
+    */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    /*
+    medidas absolutas: cm, mm, in (polegada), px, pt (ponto), pc (paica)
+    medidas relativas: em (relativa ao tamanho atual da fonte), 
+                       ex (relativa a altura "x" de uma fonte)
+                       rem (relativa ao root, fonte configurada no body)
+                       vw (porcetagem da largura da view port - tamanho da tela na horizontal)
+                       vh (porcetagem da altura da view port - tamanho da tela na vertical)
+    sendo recomendada a utilização apenas da px e em
+    16px é o tamanho da fonte padrão do navegador que é igual a 1em
+    */
+    font-weight: normal;
+    /*
+    tipos descritivos de de font-weight: lighter, nromal, bold, bolder
+    podemos colocar também com centenas, sendo o 400 = normal
+    */
+    font-style: italic;
+}
+
+h1 { 
+    font-family: 'baixada', Times, serif;
+    font-size: 3em;
+    font-weight: 900;
+    text-decoration: underline;
+
+    color: #f39209;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(98, 59, 4, 0.435);
+
+    border: 10px solid lightgray;
+
+    padding: 15px 10px 15px 10px;
+
+    margin: 15px 10px;
+
+    outline: 5px dashed #f39209;
+}
+
+h2 {
+    font: italic bolder 2em 'Times New Roman', Times, serif;
+        /* 
+    ordem da shorthand font (declaração dos parâmetros da fonte em uma única declaração):
+    font-style - font-weight - font-size - font-family
+    */
+
+    color: #1e73bd;
+}
+
+h2#titulo01{
+    color: #125189;
+    text-decoration: underline;
+    /*
+        em HTML é 'id' = em css é '#'
+        em HTML é 'class' = em css é '.'
+        *Um id só deve ser usado uma vez, se quiser usar em mais de um item, deve-se usar uma class. em apenas um item pode-se usar mais dde um id ou class.
+    */
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image: url(img/borda.png);
+    border-image-slice: 39;
+    border-image-repeat: repeat;
+}
+
+h3{
+    font: oblique normal 1.5em 'Kaushan Script', 'sans-serif';
+    
+}
+
+h3.sub02e03{
+    color: #2083d9;
+}
+
+.destacado{
+    font-weight: bold;
+}
+
+.atençao{
+    color: red;
+    text-decoration: underline;
+}
+
+body {
+    background-image: linear-gradient(to right, #f1d8c9, #f2c3a7);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px; /*arredonda as bordas de uma secão*/
+    box-shadow: 5px 5px 15px rgba(105, 85, 72, 0.484);
+    /* no "shadow" o primeiro parâmetro é o deslocameto lateral, o segundo é o deslocamento para baixo, o terceiro é o espalhamento e o último é a cor da sombra*/
+    width: 600px;
+    padding: 10px; /*espaçamento interno do conteúdo em relação a sua borda*/
+    margin: auto; /*espassamento externo da borda da seção para o limite da tela. "auto" - cebtraliza*/
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    /*'text-indent' serve para dar o espaçamento do início do parágrafo*/
+}
+
+div{
+    text-indent: 30px;
+}
+
+div:hover{
+    color: #125189;
+    /*
+    'div' cria uma divisão dentro da página
+    ':' é uma pseudo-class (está relacionado oa estado de um determinado elemento)
+    'hover' é uma pseudoclass que serve para modificar algo quando o mouse passa por cima
+    */
+}
+
+div > p{
+    display: none;
+    /*
+    '>' (children) neste caso serve para indicar que essas modificações seram realizadas apenas nos elementos dentro da div
+    */
+}
+
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: red;
+    width: 200px;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(75, 231, 75);
+    /*'visited' acontece quando já se utilizou o elemento(neste caso um link)*/
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a:active{
+    color: yellow;
+    /*'active' acontece quando se clica no elemento*/
+}
+
+a::after{
+    content:'[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: aqua;
+    /*'::' é um pseudo-elemento age no conteúdo do elemento*/
+}

@@ -1,9 +1,38 @@
 @charset "UTF-8";
 
 body {
-    background-image: url('../img/wallpaper006.jpg');
-    background-size: 100%;
-    background-repeat: repeat-y;
+    background-color: black;
+    background-image: url(../img/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*
+    "background-attachment: fixed", deixa o fundo fixado, não rola com o conteúdo
+    */
+    /*
+        Shorthand - background:
+        color > img > position > repeat > size > attachment
+    */
+
+    background: black url(../img/wallpaper002.jpg) center center no-repeat cover fixed;
+
+    /*
+    Atualmente o "size" não está funcionando na shorthand, tendo que ser declarado por fora
+    */
+}
+
+main {
+    background-color: white;
+    width: 620px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
 }
 
 div.quadrado {
@@ -49,4 +78,28 @@ div#r3 {
 
 div#r4 {
     background-position: center center;
+}
+
+#conteiner {
+    background-image: url(../img/target001.png);
+    background-size: 100% 100%;
+    position: relative;
+    height: 500px;
+    padding: 10px;
+    margin: 30px;
+    background-color: purple;
+}
+
+#conteudo {
+    background-image: url(../img/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
 }

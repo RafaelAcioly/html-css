@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 body {
-    background-image: url('../img/wallpaper001.jpg');
+    background-image: url('../img/wallpaper006.jpg');
+    background-size: 100%;
+    background-repeat: repeat-y;
 }
 
 div.quadrado {
@@ -9,8 +11,16 @@ div.quadrado {
     border: 2px solid black;
     border-radius: 10px;
     background-color: lightgray;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+div.retangulo {
+    background-image: url('../img/wallpaper002.jpg');
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 div#q1 {
@@ -23,4 +33,20 @@ div#q2 {
 
 div#q3 {
     background-image: url('../img/pattern003.png');
+}
+
+div#r1 {
+    background-position: left top;
+}
+
+div#r2 {
+    background-position: left center;
+}
+
+div#r3 {
+    background-position: right bottom;
+}
+
+div#r4 {
+    background-position: center center;
 }

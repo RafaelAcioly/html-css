@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* Css tabela 1*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabela1 {
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+tr.linhat1 {
+    background-color: gray;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.numero {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+/* Css tabela 2*/
+
+.tabela2 {
+    width: 500px;
+    position: relative;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+thead, tfoot {
+    background-color: gray;
+    color: white;
+}
+
+/*abaixo é o codigo para colocar cabeçalho fixo em tabelas, "sticky", significa grudado e o top, é para indicar onde. colocamos o background, pois ele fixa apenas o conteúdo*/
+
+thead > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: gray;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+/*"nth" serve para colocar caracteristicas específicas nas linhas que estão marcadas no parentese "(2)", neste caso a cada duas linhas. podemos usar "odd" para marcar as linhas impares e "even" para as linhas pares (2n=even; 2n-1=odd)*/
+
+#coluna-populacao {
+    width: 50px;
+}
+
+/*Css tabela 3*/
+
+.tabela3 {
+    border-collapse: collapse;
+    width: 300px;
+    text-align: center;
+}

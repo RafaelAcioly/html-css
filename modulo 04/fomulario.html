@@ -8,13 +8,27 @@
 </head>
 <body>
     <h1>Cadastre-se aqui</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            Nome:
-            <input type="text" name="nome" id="nome">
-            <input type="submit" value="cadastrar">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="iendereco">Endereço:</label>
+            <input type="text" name="endereco" id="iendereco" required placeholder="Endereço do usuário" autocomplete="address-level1">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" size="30" placeholder="Senha" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </p>
     </form>
+
+
+
 
     <a href="#" onclick="clicou()">Clique aqui</a>
     <div id="saida"></div>

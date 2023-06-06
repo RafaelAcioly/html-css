@@ -9,10 +9,23 @@
 <body>
     <h1>Cadastre-se aqui</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
+
+        <!--
+            O 'method="post"' oculta os dados enviados na barra de pesquisa;
+            O 'method="get' mostra os dados.
+        -->
+
         <p>
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" required placeholder="Nome do usuário" autocomplete="username">
         </p>
+
+        <!--
+            Sempre relacionar o 'label' atravez do 'for=' com o 'id=';
+            'required' indica que o preenchimento deste campo é obrigatório;
+            'placeholder' descreve o que deve ser preenchido no campo.
+        -->
+
         <p>
             <label for="ilogradouro">Endereço:</label>
             <input type="text" name="logradouro" id="ilogradouro" required placeholder="Endereço do usuário" autocomplete="address-level1">
@@ -34,20 +47,41 @@
             </select>
         </p>
 
+        <!--
+            'select' cria uma aba suspensa com valore predefinidos sem a possibilidade de inclusão valores não previamente definidos;
+            'optgroup' cria uma um agrupamento de opções;
+            O 'selected' em uma 'option' faz ela ser a predefinição do campo.
+        -->
+
         <p>
             <label for="isenha">Senha:</label>
             <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" size="30" placeholder="Senha" autocomplete="new-password">
         </p>
+
+        <!--
+            O 'input type="password"' já coloca os digitos ocultos automaticamente;
+            'minlength' e 'maxlength' restringuem a quantidade de caracteres possiveis no campo.
+        -->
 
         <p>
             <label for="ipeso">Peso:</label>
             <input type="number" name="peso" id="ipeso" min="0" max="300" placeholder="0 a 300" step="0.1">
         </p>
 
+        <!--
+            O 'input type="number"' permite apenas o envio de números;
+            'min' e 'max' delimitam o valor digitado no campo;
+            'step' estabelece a quantidade de casas decimais.
+        -->
+
         <p>
             <label for="inascimento">Data de nascimento:</label>
             <input type="date" name="nascimento" id="inascimento" required>
         </p>
+
+        <!--
+            O 'input type="date"' coloca uma aba suspensa com um calendário.
+        -->
 
         <p>
             <label for="iprof">Profissão:</label>
@@ -60,10 +94,18 @@
             </datalist>
         </p>
 
+        <!--
+            O 'datalist' cria uma aba suspensa com opções pre definidas e possibilidade de inclusão de valores não registrados.
+        -->
+
         <p>
             <label for="icor">Cor preferida:</label>
             <input type="color" name="cor" id="icor" value="#00ff00">
         </p>
+
+        <!--
+            O 'value=' na 'input' faz ele ser uma predefinição no campo.
+        -->
 
         <p>
             <label for="inivel">Nível de Satisfação:</label>
@@ -71,10 +113,19 @@
             <output id="ival">100</output>
         </p>
 
+        <!--
+            O 'input type="range"' cria uma barra de nível;
+            o 'output' retorna uma informação para o usuário.
+        -->
+
         <p>
             <label for="ifoto">Foto de perfil</label>
             <input type="file" name="foto" id="ifoto">
         </p>
+
+        <!--
+            O 'input type="file"' possibilita o envio de arquivo.
+        -->
 
         <fieldset>
             <legend>Sexo</legend>
@@ -82,17 +133,34 @@
             <input type="radio" name="sexo" id="isxfem"> <label for="isxfem"> Feminino</label>
         </fieldset>
 
+        <!--
+            O 'fieldset' cria uma delimitação nos campos;
+            'legend' cria um título para a 'fieldset'.
+            O 'input type="radio"' cria um circulo de seleção;
+            Se colocarmos os mesmo 'name=' para as opções de seleção vai impossibilitar a marcação de ambas ao mesmo tempo.
+        -->
+
         <fieldset>
             <legend>Contatos</legend>
             <p>
                 <label for="ifone">Telefone:</label>
                 <input type="tel" name="fone" id="ifone" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </p>
-            <!--Estudar mais sobre RegEx (expressões regulares)-->
+
+            <!--
+                'pattern' delimita a quantidade e o tipo de caracteres do campo;
+                Estudar mais sobre RegEx (expressões regulares).
+            -->
+
             <p>
                 <label for="iemail">Email:</label>
                 <input type="email" name="email" id="iemail" required autocomplete="email">
             </p>
+
+            <!--
+                O 'input type="email"' restringe o envio de dados a utilização de um '@' no campo.
+            -->
+
         </fieldset>
 
         <fieldset>
@@ -103,15 +171,31 @@
             <input type="checkbox" name="game" id="igame" checked> <label for="igame">Games</label><br>
         </fieldset>
 
+        <!--
+            O 'input type="checkbox"' cria uma caixa de seleção;
+            O 'checked' dentro da 'input' deixa a opção já selecionada.
+        -->
+
         <p>
             <label for="imsg">Mensagem:</label><br>
             <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
 
+        <!--
+            O 'textera' cria uma caixa de mensagem;
+            O 'cols' define a quantidade de caracteres até a quebra de linha;
+            O 'rows' define a quantidade de linhas.
+        -->
+
         <p>
             <input type="submit" value="enviar">
             <input type="reset" value="limpar">
         </p>
+
+        <!--
+            O 'input type="submit"' cria uma caixa para o envio do fomulário;
+            O 'input type="reset"' cria uma caixa para apagar o formulário.
+        -->
     </form>
 
 
